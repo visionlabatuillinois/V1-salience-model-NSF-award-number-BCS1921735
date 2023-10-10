@@ -1,30 +1,109 @@
-import os
-import sys
-import gc
-import trig
-import math
-from datetime import datetime, timedelta
-import random
-import numpy as np
-from PIL import Image
-import matplotlib.pyplot as plt
-import matplotlib
-import multiprocessing as mp
-#from mpi4py import MPI
-from mpi4py.futures import MPIPoolExecutor
+#* Copyright 2023 The Board of Trustees of the University of Illinois. All Rights Reserved.
+#
+# * Licensed under the terms of the Apache License 2.0 license (the "License")
+#
+# * The License is included in the distribution as License.txt file.
+#
+# * You may not use this file except in compliance with the License.
+#
+# * Software distributed under the License is distributed on an "AS IS" BASIS,
+#
+# * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#
+# * See the License for the specific language governing permissions and limitations under the License.
+
+# This code dynamically links Pillow which requires the following information to be included in any redistributions or uses:
+
+# The Python Imaging Library (PIL) is
+#
+#     Copyright © 1997-2011 by Secret Labs AB
+#     Copyright © 1995-2011 by Fredrik Lundh
+#
+# Pillow is the friendly PIL fork. It is
+#
+#     Copyright © 2010-2023 by Jeffrey A. Clark (Alex) and contributors.
+#
+# Like PIL, Pillow is licensed under the open source HPND License:
+#
+# By obtaining, using, and/or copying this software and/or its associated
+# documentation, you agree that you have read, understood, and will comply
+# with the following terms and conditions:
+#
+# Permission to use, copy, modify and distribute this software and its
+# documentation for any purpose and without fee is hereby granted,
+# provided that the above copyright notice appears in all copies, and that
+# both that copyright notice and this permission notice appear in supporting
+# documentation, and that the name of Secret Labs AB or the author not be
+# used in advertising or publicity pertaining to distribution of the software
+# without specific, written prior permission.
+#
+# SECRET LABS AB AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS
+# SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS.
+# IN NO EVENT SHALL SECRET LABS AB OR THE AUTHOR BE LIABLE FOR ANY SPECIAL,
+# INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+# LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE
+# OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+# PERFORMANCE OF THIS SOFTWARE.
+
+# This code dynamically links to numpy which requires the following information to be included in any redistributions or uses:
+
+# Copyright (c) 2005-2023, NumPy Developers.
+# All rights reserved.
+
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are
+# met:
+#
+#     * Redistributions of source code must retain the above copyright
+#        notice, this list of conditions and the following disclaimer.
+#
+#     * Redistributions in binary form must reproduce the above
+#        copyright notice, this list of conditions and the following
+#        disclaimer in the documentation and/or other materials provided
+#        with the distribution.
+#
+#     * Neither the name of the NumPy Developers nor the names of any
+#        contributors may be used to endorse or promote products derived
+#        from this software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+# "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+# LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+# A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+# OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+# SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+# LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+# DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+# THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+# * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+# Model of V1-based salience
+# Developed and written by Rachel F Heaton and John E Hummel
+# * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 
 #from simple_tools import *
+import os
+import sys
+#import gc
+import trig
+import math
+from datetime import datetime, timedelta
+#import random
+import numpy as np
+from PIL import Image
+#import matplotlib.pyplot as plt
+#import matplotlib
+#import multiprocessing as mp
+#from mpi4py import MPI
+from mpi4py.futures import MPIPoolExecutor
 from constants_4 import *
 
 
-# Setup paths and files to run
-# TODO we may want to pass the file in as an argument
-#files_to_run = ['small_dragon.png']
 
-
-#x = [i[2] for i in os.walk(inpath)]
-#files_to_run=['i1007068829.jpeg']
 
 cpu_count = os.cpu_count() - 1 # Need rank 0 to manage the pool
 
@@ -214,15 +293,7 @@ def generate_salience_map(outpath, filename, image_width, image_height, hypercol
             min_pixel_y = int(round(center[1] - rf_radius))
             max_pixel_y = int(round(center[1] + rf_radius))
 
-            # if min_pixel_x < math.ceil((VISUAL_FIELD_RADIUS * 2 - image_width) / 2): min_pixel_x = int(
-            #     math.ceil((VISUAL_FIELD_RADIUS * 2 - image_width) / 2))
-            # if min_pixel_y < math.ceil((VISUAL_FIELD_RADIUS * 2 - image_height) / 2): min_pixel_y = int(
-            #     math.ceil((VISUAL_FIELD_RADIUS * 2 - image_height) / 2))n
-            # if max_pixel_x > math.floor((VISUAL_FIELD_RADIUS * 2 + image_width) / 2): max_pixel_x = int(
-            #     math.floor((VISUAL_FIELD_RADIUS * 2 + image_width) / 2))
-            # if max_pixel_y > math.floor((VISUAL_FIELD_RADIUS * 2 + image_height) / 2): max_pixel_y = int(
-            #     math.floor((VISUAL_FIELD_RADIUS * 2 + image_height) / 2))
-            # This is where the image starts and stops within the visual field
+
             x_min_img_bound = math.ceil((VISUAL_FIELD_RADIUS * 2 - image_width) / 2)
             y_min_img_bound = math.ceil((VISUAL_FIELD_RADIUS * 2 - image_height) / 2)
             x_max_img_bound = math.floor((VISUAL_FIELD_RADIUS * 2 + image_width) / 2)
@@ -267,11 +338,7 @@ def generate_salience_map(outpath, filename, image_width, image_height, hypercol
         for y in range(len(salience_gray_values[x])):
             salience_map_image.append((salience_gray_values[x][y], salience_gray_values[x][y],salience_gray_values[x][y]))
 
-    #salience_map_image = np.dstack([salience_gray_values]*3)
-    #print(salience_map_image.shape)
-    #np.reshape(salience_map_image, (VISUAL_FIELD_RADIUS * 2, VISUAL_FIELD_RADIUS* 2, 3))
-    #salience_map_image = [tuple(salience_map_image[row][column]) for row in salience_map_image for column in row]
-    #print(salience_map_image.shape)
+
     image_square = Image.new('RGB', (VISUAL_FIELD_RADIUS * 2, VISUAL_FIELD_RADIUS* 2), (0, 0, 0))  # Black
     left = 0
     right = VISUAL_FIELD_RADIUS * 2
@@ -350,10 +417,8 @@ def rbind(comm, x):
 
 def main():
     ranks = int(sys.argv[1]) - 1
-    #inpath = sys.argv[2] #'./data/MIT1003/ALLSTIMULI/'
-    #outpath = sys.argv[3] #'./data/MIT1003/CASPER_MIT1003_OUTPUT_CONTRAST/'
-    inpath = './data/MIT1003/ALLSTIMULI/'
-    outpath = './data/completed_runs/MIT1003/CASPER_MIT1003_CONTRAST_16082021_2/'
+    inpath = './data/input_images/'
+    outpath = './data/output_images/'
 
     x = [i[2] for i in os.walk(inpath)]
     files_to_run = []
