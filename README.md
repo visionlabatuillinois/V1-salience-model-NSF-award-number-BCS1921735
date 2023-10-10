@@ -41,7 +41,7 @@ LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE
 OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 
-# This code dynamically links to numpy which requires the following information to be included in any redistributions or uses:
+# This code dynamically links numpy which requires the following information to be included in any redistributions or uses:
 
 Copyright (c) 2005-2023, NumPy Developers.
 All rights reserved.
