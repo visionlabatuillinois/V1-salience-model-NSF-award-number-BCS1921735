@@ -71,6 +71,12 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+This model was benchmarked on the MIT/Tuebingen Saliency benchmarks as
+CASPER V1 Salience
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+https://saliency.tuebingen.ai/results.html
+
 # To run this code:
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 # 1. Install Python 3 
