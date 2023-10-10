@@ -89,6 +89,6 @@ The default paths are
 Put the files you want to analyze in the 'inpath' directory
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-# 3. Open a terminal window and execute the following command
+# 3. Open a terminal window and execute the following command in the directory where the code is located
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 mpirun -np 2 python3 -u -m mpi4py.futures ./runfilters_contrast.py 2
