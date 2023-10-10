@@ -86,6 +86,8 @@ The default paths are
     inpath = './data/input_images/'
     outpath = './data/output_images'
 
+Put the files you want to analyze in the 'inpath' directory
+
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 # 3. Open a terminal window and execute the following command
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
