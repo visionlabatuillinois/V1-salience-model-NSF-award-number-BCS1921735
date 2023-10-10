@@ -1,7 +1,7 @@
 # salience-model
 A model of visual salience written and developed by Rachel Heaton and John Hummel
 
-#* Copyright 2023 The Board of Trustees of the University of Illinois. All Rights Reserved.
+# * Copyright 2023 The Board of Trustees of the University of Illinois. All Rights Reserved.
 #
 # * Licensed under the terms of the Apache License 2.0 license (the "License")
 #
@@ -25,45 +25,45 @@ A model of visual salience written and developed by Rachel Heaton and John Humme
 
 
 # This code dynamically links Pillow which requires the following information to be included in any redistributions or uses:
-#The Python Imaging Library (PIL) is
+# The Python Imaging Library (PIL) is
 #
 #    Copyright © 1997-2011 by Secret Labs AB
 #    Copyright © 1995-2011 by Fredrik Lundh
 #
-#Pillow is the friendly PIL fork. It is
+# Pillow is the friendly PIL fork. It is
 #
 #    Copyright © 2010-2023 by Jeffrey A. Clark (Alex) and contributors.
 #
-#Like PIL, Pillow is licensed under the open source HPND License:
+# Like PIL, Pillow is licensed under the open source HPND License:
 #
-#By obtaining, using, and/or copying this software and/or its associated
-#documentation, you agree that you have read, understood, and will comply
-#with the following terms and conditions:
+# By obtaining, using, and/or copying this software and/or its associated
+# documentation, you agree that you have read, understood, and will comply
+# with the following terms and conditions:
 #
-#Permission to use, copy, modify and distribute this software and its
-#documentation for any purpose and without fee is hereby granted,
-#provided that the above copyright notice appears in all copies, and that
-#both that copyright notice and this permission notice appear in supporting
-#documentation, and that the name of Secret Labs AB or the author not be
-#used in advertising or publicity pertaining to distribution of the software
-#without specific, written prior permission.
+# Permission to use, copy, modify and distribute this software and its
+# documentation for any purpose and without fee is hereby granted,
+# provided that the above copyright notice appears in all copies, and that
+# both that copyright notice and this permission notice appear in supporting
+# documentation, and that the name of Secret Labs AB or the author not be
+# used in advertising or publicity pertaining to distribution of the software
+# without specific, written prior permission.
 #
-#SECRET LABS AB AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS
-#SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS.
-#IN NO EVENT SHALL SECRET LABS AB OR THE AUTHOR BE LIABLE FOR ANY SPECIAL,
-#INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-#LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE
-#OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-#PERFORMANCE OF THIS SOFTWARE.
+# SECRET LABS AB AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS
+# SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS.
+# IN NO EVENT SHALL SECRET LABS AB OR THE AUTHOR BE LIABLE FOR ANY SPECIAL,
+# INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+# LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE
+# OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+# PERFORMANCE OF THIS SOFTWARE.
 
-#This code dynamically links to numpy which requires the following information to be included in any redistributions or uses:
+# This code dynamically links to numpy which requires the following information to be included in any redistributions or uses:
 
-#Copyright (c) 2005-2023, NumPy Developers.
-#All rights reserved.
+# Copyright (c) 2005-2023, NumPy Developers.
+# All rights reserved.
 
-#Redistribution and use in source and binary forms, with or without
-#modification, are permitted provided that the following conditions are
-#met:
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are
+# met:
 #
 #    * Redistributions of source code must retain the above copyright
 #       notice, this list of conditions and the following disclaimer.
@@ -77,17 +77,17 @@ A model of visual salience written and developed by Rachel Heaton and John Humme
 #       contributors may be used to endorse or promote products derived
 #       from this software without specific prior written permission.
 #
-#THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-#"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-#LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-#A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-#OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-#SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-#LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-#DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-#THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-#(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-#OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+# "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+# LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+# A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+# OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+# SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+# LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+# DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+# THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 To run this code:
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
