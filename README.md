@@ -75,13 +75,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 # 1. Install Python 3 (This code was developed using Python 3.7)
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 Make sure the following modules/libraries are installed and available:
-os
-sys
-math
-from datetime import datetime
-numpy
-Pillow
-mpi4py
+os, sys, math, datetime, numpy, Pillow, mpi4py
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 # 2. Update the input and output path information for the images you want to run
