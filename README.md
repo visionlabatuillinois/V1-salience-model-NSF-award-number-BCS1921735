@@ -78,6 +78,12 @@ CASPER V1 Salience
 
 https://saliency.tuebingen.ai/results.html
 
+
+If this code is used for academic research, please cite the DOI attached to this repository:
+
+<a href="https://zenodo.org/badge/latestdoi/703059168"><img src="https://zenodo.org/badge/703059168.svg" alt="DOI"></a>
+
+
 # To run this code:
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 # 1. Install Python 3 
