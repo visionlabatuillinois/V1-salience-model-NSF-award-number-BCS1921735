@@ -73,8 +73,11 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # To run this code:
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-# 1. Install Python 3 (This code was developed using Python 3.7)
+# 1. Install Python 3 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+(This code was developed using Python 3.7)
+
 Make sure the following modules/libraries are installed and available:
 os, sys, math, datetime, numpy, Pillow, mpi4py
 
