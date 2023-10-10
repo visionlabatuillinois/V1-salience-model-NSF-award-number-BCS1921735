@@ -9,10 +9,10 @@ A model of visual salience written and developed by Rachel Heaton and John Humme
 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 * See the License for the specific language governing permissions and limitations under the License.
 
-# * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+# * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 # Model of V1-based salience
 # Developed and written by Rachel F Heaton and John E Hummel
-# * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+# * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 
 This code dynamically links Pillow which requires the following information to be included in any redistributions or uses:
 The Python Imaging Library (PIL) is
