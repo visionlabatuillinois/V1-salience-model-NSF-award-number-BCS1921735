@@ -86,7 +86,9 @@ os, sys, math, datetime, numpy, Pillow, mpi4py
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 These are found in the main() method at the bottom of runfilters_contrast.py
 The default paths are
+
     inpath = './data/input_images/'
+    
     outpath = './data/output_images'
 
 Put the files you want to analyze in the 'inpath' directory
