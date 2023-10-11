@@ -83,6 +83,9 @@ If this code is used for academic research, please cite the DOI attached to this
 
 <a href="https://zenodo.org/badge/latestdoi/703059168"><img src="https://zenodo.org/badge/703059168.svg" alt="DOI"></a>
 
+This material is based upon work supported by the National Science Foundation under Grant No. BCS1921735
+
+This research is part of the Blue Waters sustained-petascale computing project, which is supported by the National Science Foundation (awards OCI-0725070 and ACI-1238993) the State of Illinois, and as of December, 2019, the National Geospatial-Intelligence Agency. Blue Waters is a joint effort of the University of Illinois at Urbana-Champaign and its National Center for Supercomputing Applications.
 
 # To run this code:
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
