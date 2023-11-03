@@ -10,8 +10,6 @@ This model was benchmarked on the MIT/Tuebingen Saliency benchmarks as
 CASPER V1 Salience
 https://saliency.tuebingen.ai/results.html
 
-
-
 # This code dynamically links Pillow which requires the following information to be included in any redistributions or uses:
 The Python Imaging Library (PIL) is
    Copyright © 1997-2011 by Secret Labs AB
