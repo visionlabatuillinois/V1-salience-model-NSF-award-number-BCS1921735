@@ -10,6 +10,10 @@ This model was benchmarked on the MIT/Tuebingen Saliency benchmarks as
 CASPER V1 Salience
 https://saliency.tuebingen.ai/results.html
 
+# If this work is used in academic research, please cite
+Heaton, R. F., Buetti, S., Lleras, A., & Hummel, J. E. (2021). Visual salience maps based on V1 blob cells. 62nd Annual Meeting of the Psychonomic Society. 
+Heaton, R. F., Hummel, J. E., Lleras, A., & Buetti, S. (2023). Cortical Magnification, Not Summary Statistics, Explains Information Loss in Peripheral Vision. 31st Annual meeting of the Object Perception, Attention, and Memory conference.
+
 # This code dynamically links Pillow which requires the following information to be included in any redistributions or uses:
 The Python Imaging Library (PIL) is
    Copyright © 1997-2011 by Secret Labs AB
