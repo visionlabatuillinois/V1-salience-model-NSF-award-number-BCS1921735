@@ -1,22 +1,17 @@
-# salience-model
-# Conceptualization: Simona Buetti, John E Hummel, Alejandro Lleras, and Rachel F Heaton .
-# Software: John E Hummel and Rachel F Heaton.
+# Acknowledgements
+This work was supported by a 2019 grant from the National Science Foundation to Simona Buetti (PI) under award number [BCS1921735](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1921735&HistoricalAwards=false ) (Hummel and Lleras, Co-PIs), CompCog: Template Contrast and Saliency (TCAS) Toolbox: a tool to visualize parallel attentive evaluation of scenes.
+This research is part of the Blue Waters sustained-petascale computing project, which is supported by the National Science Foundation (awards OCI-0725070 and ACI-1238993) the State of Illinois, and as of December, 2019, the National Geospatial-Intelligence Agency. Blue Waters is a joint effort of the University of Illinois at Urbana-Champaign and its National Center for Supercomputing Applications.
 
-* Copyright 2023 The Board of Trustees of the University of Illinois. All Rights Reserved.
-* Licensed under the terms of the Apache License 2.0 license (the "License")
-* The License is included in the distribution as License.txt file.
-* You may not use this file except in compliance with the License.
-* Software distributed under the License is distributed on an "AS IS" BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and limitations under the License.
+# V1-salience-model
+Conceptualization: Simona Buetti, John E Hummel, Alejandro Lleras, and Rachel F Heaton .
+Software: John E Hummel and Rachel F Heaton.
+This model was benchmarked on the MIT/Tuebingen Saliency benchmarks as
+CASPER V1 Salience
+https://saliency.tuebingen.ai/results.html
 
-# * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
-# Model of V1-based salience
-# Developed and written by Rachel F Heaton and John E Hummel
-# * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
 
 # This code dynamically links Pillow which requires the following information to be included in any redistributions or uses:
-
 The Python Imaging Library (PIL) is
    Copyright © 1997-2011 by Secret Labs AB
    Copyright © 1995-2011 by Fredrik Lundh
@@ -43,7 +38,6 @@ OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 
 # This code dynamically links numpy which requires the following information to be included in any redistributions or uses:
-
 Copyright (c) 2005-2023, NumPy Developers.
 All rights reserved.
 
@@ -73,7 +67,6 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # This code dynamically links MPI which requires the following information to be included in any redistributions or uses:
-
 =======================
 LICENSE: MPI for Python
 =======================
@@ -111,23 +104,6 @@ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
 THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-This model was benchmarked on the MIT/Tuebingen Saliency benchmarks as
-CASPER V1 Salience
-
-
-https://saliency.tuebingen.ai/results.html
-
-
-If this code is used for academic research, please cite the DOI attached to this repository:
-
-<a href="https://zenodo.org/badge/latestdoi/703059168"><img src="https://zenodo.org/badge/703059168.svg" alt="DOI"></a>
-
-# Acknowledgements
-This material is based upon work supported by the National Science Foundation under Grant No. BCS1921735
-
-This research is part of the Blue Waters sustained-petascale computing project, which is supported by the National Science Foundation (awards OCI-0725070 and ACI-1238993) the State of Illinois, and as of December, 2019, the National Geospatial-Intelligence Agency. Blue Waters is a joint effort of the University of Illinois at Urbana-Champaign and its National Center for Supercomputing Applications.
 
 # To run this code:
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
