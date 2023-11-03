@@ -1,5 +1,6 @@
 # salience-model
-A model of visual salience written and developed by Rachel F Heaton and John E Hummel
+# Conceptualization: Simona Buetti, John E Hummel, Alejandro Lleras, and Rachel F Heaton .
+# Software: John E Hummel and Rachel F Heaton.
 
 * Copyright 2023 The Board of Trustees of the University of Illinois. All Rights Reserved.
 * Licensed under the terms of the Apache License 2.0 license (the "License")
