@@ -1,6 +1,7 @@
 # Acknowledgements
 This work was supported by a 2019 grant from the National Science Foundation to Simona Buetti (PI) under award number [BCS1921735](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1921735&HistoricalAwards=false ) (Hummel and Lleras, Co-PIs), CompCog: Template Contrast and Saliency (TCAS) Toolbox: a tool to visualize parallel attentive evaluation of scenes.
-This research is part of the Blue Waters sustained-petascale computing project, which is supported by the National Science Foundation (awards OCI-0725070 and ACI-1238993) the State of Illinois, and as of December, 2019, the National Geospatial-Intelligence Agency. Blue Waters is a joint effort of the University of Illinois at Urbana-Champaign and its National Center for Supercomputing Applications.
+
+This research is part of the Blue Waters sustained-petascale computing project, which is supported by the National Science Foundation (awards OCI-0725070 and ACI-1238993) the State of Illinois and the National Geospatial-Intelligence Agency. Blue Waters is a joint effort of the University of Illinois at Urbana-Champaign and its National Center for Supercomputing Applications.
 
 # V1-salience-model
 Conceptualization: Simona Buetti, John E Hummel, Alejandro Lleras, and Rachel F Heaton .
