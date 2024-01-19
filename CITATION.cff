@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Heaton"
+  given-names: "Rachel"
+- family-names: "Hummel"
+  given-names: "John"
+- family-names: "Lleras"
+  given-names: "Alejandro"
+- family-names: "Buetti"
+  given-names: "Simona"
+title: "V1-salience-model"
+url: "https://github.com/visionlabatuillinois/V1-salience-model-NSF-award-number-BCS1921735"
